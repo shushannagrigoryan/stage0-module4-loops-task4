@@ -2,6 +2,8 @@ package school.mjc.stage0.loops.task4;
 
 public class TwoRangesSum {
     public void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
+        System.out.println("numberToSkip = " + numberToSkip);
+        System.out.println("lastInRow = " + lastInRow);
         int skipped_sum = 0;
         int counted_sum = 0;
 
@@ -16,9 +18,11 @@ public class TwoRangesSum {
                 }
                 skipped_sum+=i;
             }
+
+            System.out.println("skipped sum is " + skipped_sum);
+            System.out.println("counted sum is " + counted_sum);
         }
 
-        System.out.println("skipped sum is number" + skipped_sum);
-        System.out.println("counted sum is number" + counted_sum);
+
     }
 }
